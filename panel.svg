@@ -1,42 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="232" viewBox="0 0 760 232" role="img" aria-label="The DeepSeek Clock section as it appears in the Work Status panel">
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="228" viewBox="0 0 760 228" role="img" aria-label="The DeepSeek Clock section as it appears in the Work Status panel">
   <defs>
     <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#1c1f26"/>
       <stop offset="1" stop-color="#171a20"/>
     </linearGradient>
+    <clipPath id="band-clip">
+      <rect x="42" y="130" width="676" height="22" rx="6"/>
+    </clipPath>
   </defs>
 
-  <rect width="760" height="232" rx="18" fill="#101215"/>
-  <rect x="18" y="18" width="724" height="196" rx="14" fill="url(#card)" stroke="#2b303a" stroke-width="1.5"/>
+  <rect width="760" height="228" rx="18" fill="#101215"/>
+  <rect x="18" y="18" width="724" height="190" rx="14" fill="url(#card)" stroke="#2b303a" stroke-width="1.5"/>
 
-  <text x="42" y="52" font-family="ui-sans-serif, system-ui, sans-serif" font-size="17" font-weight="600" fill="#e8e8e8">DeepSeek peak hours</text>
-  <path d="M700 46 l8 6 -8 6" fill="none" stroke="#6b7280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="42" y="50" font-family="ui-sans-serif, system-ui, sans-serif" font-size="17" font-weight="600" fill="#e8e8e8">DeepSeek peak hours</text>
+  <path d="M700 44 l8 6 -8 6" fill="none" stroke="#6b7280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 
-  <rect x="42" y="70" width="96" height="24" rx="12" fill="#10b981" fill-opacity="0.16"/>
-  <circle cx="58" cy="82" r="4" fill="#34d399"/>
-  <text x="68" y="87" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="700" fill="#6ee7b7">OFF-PEAK</text>
+  <rect x="42" y="68" width="96" height="24" rx="12" fill="#10b981" fill-opacity="0.16"/>
+  <circle cx="58" cy="80" r="4" fill="#34d399"/>
+  <text x="68" y="85" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="700" fill="#6ee7b7">OFF-PEAK</text>
 
-  <text x="150" y="87" font-family="ui-sans-serif, system-ui, sans-serif" font-size="14" fill="#9ca3af">Next switch  →  Mon 09:00</text>
+  <text x="150" y="85" font-family="ui-sans-serif, system-ui, sans-serif" font-size="14" fill="#9ca3af">Next switch  →  Mon 09:00</text>
 
-  <text x="42" y="118" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#9ca3af">Outside the weekday peak windows</text>
+  <text x="42" y="114" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#9ca3af">Outside the weekday peak windows</text>
 
-  <rect x="42" y="134" width="676" height="22" rx="6" fill="#2a2f38"/>
-  <rect x="42" y="134" width="169" height="22" rx="6" fill="#10b981" fill-opacity="0.55"/>
-  <rect x="211" y="134" width="94" height="22" fill="#ef4444" fill-opacity="0.55"/>
-  <rect x="305" y="134" width="118" height="22" fill="#10b981" fill-opacity="0.55"/>
-  <rect x="423" y="134" width="94" height="22" fill="#ef4444" fill-opacity="0.55"/>
-  <rect x="517" y="134" width="201" height="22" rx="6" fill="#10b981" fill-opacity="0.55"/>
-
-  <rect x="42" y="130" width="3" height="30" rx="1.5" fill="#f4f4f5"/>
+  <!-- 24h band: neutral track, peak windows in red; one clipped rounded shape keeps every corner consistent -->
+  <g clip-path="url(#band-clip)">
+    <rect x="42" y="130" width="676" height="22" fill="#2a2f38"/>
+    <rect x="211" y="130" width="94" height="22" fill="#ef4444" fill-opacity="0.6"/>
+    <rect x="423" y="130" width="94" height="22" fill="#ef4444" fill-opacity="0.6"/>
+    <rect x="42" y="130" width="3" height="22" rx="1.5" fill="#f4f4f5"/>
+  </g>
 
   <g font-family="ui-sans-serif, system-ui, sans-serif" font-size="10" fill="#6b7280">
-    <text x="42" y="176">00</text>
-    <text x="206" y="176">06</text>
-    <text x="381" y="176">12</text>
-    <text x="552" y="176">18</text>
-    <text x="718" y="176" text-anchor="end">24</text>
+    <text x="42" y="172">00</text>
+    <text x="206" y="172">06</text>
+    <text x="381" y="172">12</text>
+    <text x="552" y="172">18</text>
+    <text x="718" y="172" text-anchor="end">24</text>
 
-    <text x="42" y="200" fill="#8b919c">Europe/Berlin</text>
-    <text x="718" y="200" fill="#8b919c" text-anchor="end">Peak 09:00–12:00, 14:00–18:00</text>
+    <text x="42" y="194" fill="#8b919c">Europe/Berlin</text>
+    <text x="718" y="194" fill="#8b919c" text-anchor="end">Peak 09:00–12:00, 14:00–18:00</text>
   </g>
 </svg>
