@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="210" viewBox="0 0 760 210" role="img" aria-label="Animated DeepSeek Clock: the now marker moves through the day and the section flips between off-peak and peak">
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="232" viewBox="0 0 760 232" role="img" aria-label="Animated DeepSeek Clock: the now marker moves through the day and the section flips between off-peak and peak">
   <defs>
     <linearGradient id="demo-card" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#1c1f26"/>
@@ -6,20 +6,20 @@
     </linearGradient>
   </defs>
 
-  <rect width="760" height="210" rx="18" fill="#101215"/>
-  <rect x="18" y="18" width="724" height="174" rx="14" fill="url(#demo-card)" stroke="#2b303a" stroke-width="1.5"/>
+  <rect width="760" height="232" rx="18" fill="#101215"/>
+  <rect x="18" y="18" width="724" height="196" rx="14" fill="url(#demo-card)" stroke="#2b303a" stroke-width="1.5"/>
 
-  <text x="42" y="50" font-family="ui-sans-serif, system-ui, sans-serif" font-size="17" font-weight="600" fill="#e8e8e8">DeepSeek peak hours</text>
-  <path d="M700 44 l8 6 -8 6" fill="none" stroke="#6b7280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="42" y="52" font-family="ui-sans-serif, system-ui, sans-serif" font-size="17" font-weight="600" fill="#e8e8e8">DeepSeek peak hours</text>
+  <path d="M700 46 l8 6 -8 6" fill="none" stroke="#6b7280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 
   <!-- OFF-PEAK badge -->
   <g>
     <animate attributeName="opacity" dur="16s" repeatCount="indefinite"
       keyTimes="0;0.23;0.27;0.37;0.41;0.54;0.58;0.68;0.72;1"
       values="1;1;0;0;1;1;0;0;1;1"/>
-    <rect x="42" y="72" width="96" height="24" rx="12" fill="#10b981" fill-opacity="0.16"/>
-    <circle cx="58" cy="84" r="4" fill="#34d399"/>
-    <text x="68" y="89" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="700" fill="#6ee7b7">OFF-PEAK</text>
+    <rect x="42" y="70" width="96" height="24" rx="12" fill="#10b981" fill-opacity="0.16"/>
+    <circle cx="58" cy="82" r="4" fill="#34d399"/>
+    <text x="68" y="87" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="700" fill="#6ee7b7">OFF-PEAK</text>
   </g>
 
   <!-- PEAK badge -->
@@ -27,48 +27,49 @@
     <animate attributeName="opacity" dur="16s" repeatCount="indefinite"
       keyTimes="0;0.23;0.27;0.37;0.41;0.54;0.58;0.68;0.72;1"
       values="0;0;1;1;0;0;1;1;0;0"/>
-    <rect x="42" y="72" width="72" height="24" rx="12" fill="#ef4444" fill-opacity="0.16"/>
-    <circle cx="58" cy="84" r="4" fill="#f87171"/>
-    <text x="68" y="89" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="700" fill="#fca5a5">PEAK</text>
+    <rect x="42" y="70" width="72" height="24" rx="12" fill="#ef4444" fill-opacity="0.16"/>
+    <circle cx="58" cy="82" r="4" fill="#f87171"/>
+    <text x="68" y="87" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="700" fill="#fca5a5">PEAK</text>
   </g>
 
-  <text x="150" y="89" font-family="ui-sans-serif, system-ui, sans-serif" font-size="14" fill="#9ca3af">Next switch  →  Mon 09:00</text>
+  <text x="150" y="87" font-family="ui-sans-serif, system-ui, sans-serif" font-size="14" fill="#9ca3af">Next switch  →  Mon 09:00</text>
 
   <!-- reason: off-peak -->
   <g>
     <animate attributeName="opacity" dur="16s" repeatCount="indefinite"
       keyTimes="0;0.23;0.27;0.37;0.41;0.54;0.58;0.68;0.72;1"
       values="1;1;0;0;1;1;0;0;1;1"/>
-    <text x="42" y="120" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#9ca3af">Outside the weekday peak windows</text>
+    <text x="42" y="118" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#9ca3af">Outside the weekday peak windows</text>
   </g>
   <!-- reason: peak -->
   <g>
     <animate attributeName="opacity" dur="16s" repeatCount="indefinite"
       keyTimes="0;0.23;0.27;0.37;0.41;0.54;0.58;0.68;0.72;1"
       values="0;0;1;1;0;0;1;1;0;0"/>
-    <text x="42" y="120" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#9ca3af">Inside a weekday peak window</text>
+    <text x="42" y="118" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#9ca3af">Inside a weekday peak window</text>
   </g>
 
   <!-- 24h band -->
-  <rect x="42" y="136" width="676" height="22" rx="6" fill="#2a2f38"/>
-  <rect x="42" y="136" width="169" height="22" rx="6" fill="#10b981" fill-opacity="0.55"/>
-  <rect x="211" y="136" width="94" height="22" fill="#ef4444" fill-opacity="0.55"/>
-  <rect x="305" y="136" width="118" height="22" fill="#10b981" fill-opacity="0.55"/>
-  <rect x="423" y="136" width="94" height="22" fill="#ef4444" fill-opacity="0.55"/>
-  <rect x="517" y="136" width="201" height="22" rx="6" fill="#10b981" fill-opacity="0.55"/>
+  <rect x="42" y="134" width="676" height="22" rx="6" fill="#2a2f38"/>
+  <rect x="42" y="134" width="169" height="22" rx="6" fill="#10b981" fill-opacity="0.55"/>
+  <rect x="211" y="134" width="94" height="22" fill="#ef4444" fill-opacity="0.55"/>
+  <rect x="305" y="134" width="118" height="22" fill="#10b981" fill-opacity="0.55"/>
+  <rect x="423" y="134" width="94" height="22" fill="#ef4444" fill-opacity="0.55"/>
+  <rect x="517" y="134" width="201" height="22" rx="6" fill="#10b981" fill-opacity="0.55"/>
 
   <!-- now marker -->
-  <rect x="42" y="132" width="3" height="30" rx="1.5" fill="#f4f4f5">
+  <rect x="42" y="130" width="3" height="30" rx="1.5" fill="#f4f4f5">
     <animate attributeName="x" values="42;715" dur="16s" repeatCount="indefinite" calcMode="linear"/>
   </rect>
 
   <g font-family="ui-sans-serif, system-ui, sans-serif" font-size="10" fill="#6b7280">
-    <text x="42" y="178">00</text>
-    <text x="206" y="178">06</text>
-    <text x="381" y="178">12</text>
-    <text x="552" y="178">18</text>
-    <text x="702" y="178">24</text>
-    <text x="42" y="196" fill="#8b919c" font-size="10">Europe/Berlin</text>
-    <text x="500" y="196" fill="#8b919c" font-size="10">Peak 09:00–12:00, 14:00–18:00</text>
+    <text x="42" y="176">00</text>
+    <text x="206" y="176">06</text>
+    <text x="381" y="176">12</text>
+    <text x="552" y="176">18</text>
+    <text x="718" y="176" text-anchor="end">24</text>
+
+    <text x="42" y="200" fill="#8b919c">Europe/Berlin</text>
+    <text x="718" y="200" fill="#8b919c" text-anchor="end">Peak 09:00–12:00, 14:00–18:00</text>
   </g>
 </svg>
