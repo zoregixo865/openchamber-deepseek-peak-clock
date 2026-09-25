@@ -4,7 +4,7 @@
  * Source: https://api-docs.deepseek.com/quick_start/pricing
  *   Peak: 01:00-04:00 and 06:00-10:00 UTC, Monday-Friday, excluding Chinese
  *   public holidays. Everything else, including weekends and holidays in full,
- *   is off-peak, at half the peak rate.
+ *   is off-peak. Off-peak is the base rate; peak costs twice it.
  *
  * DeepSeek publishes the schedule against a Beijing working day, so all of the
  * day/week logic below is evaluated in Beijing time (UTC+8, no DST). Only the

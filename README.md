@@ -25,7 +25,7 @@
 A single section in the right sidebar, next to **Usage**:
 
 <p align="center">
-  <img src="panel.svg" alt="The section: OFF-PEAK badge, countdown to the next switch, reason, and a 24-hour peak band" width="620" />
+  <img src="demo.svg" alt="Animated: the now marker moves through the day and the section flips between OFF-PEAK and PEAK" width="620" />
 </p>
 
 - **`PEAK` / `OFF-PEAK` badge** — the period you are paying right now.
@@ -38,12 +38,12 @@ It ticks every second, so the countdown is always live.
 
 ## 🧠 Why it exists
 
-DeepSeek charges **two rates** for the same tokens, and off-peak is exactly **half** of peak. If you plan spend — or just want the same request to cost less — the hour you send it matters:
+DeepSeek bills the same tokens at **two rates**, and **peak costs 2× the off-peak rate**. Off-peak hours are the ordinary price; peak hours double it. If you plan spend — or just want a long agent run to cost less — the hour you send it matters:
 
-| Rate | Compared to peak |
+| Rate | Cost |
 | --- | --- |
-| **Peak** | 1× |
-| **Off-peak** | **0.5×** — half price |
+| **Off-peak** | base rate |
+| **Peak** | **2× the off-peak rate** |
 
 This extension makes that hour visible, so you can decide *when* to run a long agent task instead of guessing.
 
@@ -134,7 +134,8 @@ deepseek-clock/
 ├── index.html        # mount point
 ├── preview.html      # standalone preview
 ├── banner.svg        # README artwork
-├── panel.svg
+├── panel.svg         # static panel mock
+├── demo.svg          # animated panel demo
 ├── CHANGELOG.md
 ├── LICENSE
 └── README.md
