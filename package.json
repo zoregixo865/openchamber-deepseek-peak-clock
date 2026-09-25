@@ -1,10 +1,18 @@
 {
-  "name": "openchamber-deepseek-clock",
+  "name": "openchamber-deepseek-peak-clock",
   "version": "0.1.0",
   "private": true,
   "description": "OpenChamber extension: a live DeepSeek peak / off-peak billing clock for the Work Status panel.",
   "license": "MIT",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zoregixo865/openchamber-deepseek-peak-clock.git"
+  },
+  "homepage": "https://github.com/zoregixo865/openchamber-deepseek-peak-clock#readme",
+  "bugs": {
+    "url": "https://github.com/zoregixo865/openchamber-deepseek-peak-clock/issues"
+  },
   "keywords": [
     "openchamber",
     "openchamber-extension",
