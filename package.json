@@ -23,8 +23,8 @@
     "usage"
   ],
   "scripts": {
-    "test": "bun test status/peak.test.ts",
-    "build": "bunx openchamber-guest-bundle status/main.ts status/main.js"
+    "test": "bun test peak.test.ts",
+    "build": "bunx openchamber-guest-bundle main.ts main.js"
   },
   "openchamber": {
     "apiVersion": 1,
@@ -38,7 +38,7 @@
         "icon": "timer-line"
       },
       "statusSection": {
-        "entry": "status/index.html",
+        "entry": "index.html",
         "title": "DeepSeek peak hours",
         "height": 148
       }

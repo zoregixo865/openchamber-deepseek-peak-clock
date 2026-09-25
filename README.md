@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="DeepSeek Clock — peak and off-peak billing for OpenChamber" width="900" />
+  <img src="banner.svg" alt="DeepSeek Clock — peak and off-peak billing for OpenChamber" width="900" />
 </p>
 
 <p align="center">
@@ -25,7 +25,7 @@
 A single section in the right sidebar, next to **Usage**:
 
 <p align="center">
-  <img src="assets/panel.svg" alt="The section: OFF-PEAK badge, countdown to the next switch, reason, and a 24-hour peak band" width="620" />
+  <img src="panel.svg" alt="The section: OFF-PEAK badge, countdown to the next switch, reason, and a 24-hour peak band" width="620" />
 </p>
 
 - **`PEAK` / `OFF-PEAK` badge** — the period you are paying right now.
@@ -102,7 +102,7 @@ The clock renders the *result* in the time zone of the machine viewing the panel
 
 ## 🎌 Holidays
 
-Chinese public holidays for **2026** are hardcoded in [`status/peak.ts`](status/peak.ts) (`CN_HOLIDAYS_2026`), as inclusive Beijing calendar dates:
+Chinese public holidays for **2026** are hardcoded in [`peak.ts`](peak.ts) (`CN_HOLIDAYS_2026`), as inclusive Beijing calendar dates:
 
 ```ts
 { label: 'Spring Festival', from: '2026-02-15', to: '2026-02-23' },
@@ -113,37 +113,39 @@ The State Council publishes the next year's arrangement late in the current year
 ## 🛠️ Development
 
 ```sh
-bun add @openchamber/sdk@2.0.1                              # dev dependency, not shipped
-bun test status/peak.test.ts                               # schedule logic, 13 cases
-bunx openchamber-guest-bundle status/main.ts status/main.js # build the runtime bundle
+bun add @openchamber/sdk@2.0.1             # dev dependency, not shipped
+bun test peak.test.ts                      # schedule logic, 13 cases
+bunx openchamber-guest-bundle main.ts main.js  # build the runtime bundle
 ```
 
 - `bun run test` / `bun run build` are wired as scripts.
-- `status/preview.html` is a standalone dark-theme preview of the panel with mock tokens — open it directly, no host needed.
+- `preview.html` is a standalone dark-theme preview of the panel with mock tokens — open it directly, no host needed.
 - Install the folder from **Settings → Extensions** while developing; reload the panel after a rebuild.
 
 ## 📁 Layout
 
 ```
 deepseek-clock/
-├── package.json          # OpenChamber manifest under "openchamber"
-├── status/
-│   ├── peak.ts           # pure schedule logic (Beijing math, holidays, next switch)
-│   ├── peak.test.ts      # unit tests
-│   ├── main.ts           # panel rendering, ticks every second
-│   ├── main.js           # built IIFE bundle (committed)
-│   ├── index.html        # mount point
-│   └── preview.html      # standalone preview
-├── assets/               # README artwork
+├── package.json      # OpenChamber manifest under "openchamber"
+├── peak.ts           # pure schedule logic (Beijing math, holidays, next switch)
+├── peak.test.ts      # unit tests
+├── main.ts           # panel rendering, ticks every second
+├── main.js           # built IIFE bundle (committed)
+├── index.html        # mount point
+├── preview.html      # standalone preview
+├── banner.svg        # README artwork
+├── panel.svg
+├── CHANGELOG.md
+├── LICENSE
 └── README.md
 ```
 
-OpenChamber serves `status/index.html` + `status/main.js` as-is; there is no build step at install time and no `node_modules` in the shipped package.
+OpenChamber serves `index.html` + `main.js` as-is; there is no build step at install time and no `node_modules` in the shipped package.
 
 ## 🚀 Releasing an update
 
 1. Bump `version` in `package.json` (semver).
-2. Rebuild: `bunx openchamber-guest-bundle status/main.ts status/main.js`.
+2. Rebuild: `bunx openchamber-guest-bundle main.ts main.js`.
 3. Commit the **built** `main.js` together with the source, then push.
 4. Users who installed from the Git URL see **Update available** in **Settings → Extensions**.
 
