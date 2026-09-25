@@ -4,7 +4,6 @@
 
 <p align="center">
   <img src="https://img.shields.io/static/v1?label=OpenChamber&message=%E2%89%A5%202.0.1&color=205EA6&style=flat-square" alt="OpenChamber >= 2.0.1" />
-  <img src="https://img.shields.io/github/license/zoregixo865/openchamber-deepseek-peak-clock?style=flat-square&color=66800B" alt="MIT" />
   <img src="https://img.shields.io/static/v1?label=permissions&message=none&color=10b981&style=flat-square" alt="No permissions" />
   <img src="https://img.shields.io/static/v1?label=network&message=none&color=8B7EC8&style=flat-square" alt="No network access" />
   <img src="https://img.shields.io/github/stars/zoregixo865/openchamber-deepseek-peak-clock?style=flat-square&color=205EA6&label=stars" alt="Stars" />
