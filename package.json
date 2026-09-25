@@ -1,0 +1,42 @@
+{
+  "name": "openchamber-deepseek-clock",
+  "version": "0.1.0",
+  "private": true,
+  "description": "OpenChamber extension: a live DeepSeek peak / off-peak billing clock for the Work Status panel.",
+  "license": "MIT",
+  "type": "module",
+  "keywords": [
+    "openchamber",
+    "openchamber-extension",
+    "deepseek",
+    "peak",
+    "off-peak",
+    "billing",
+    "usage"
+  ],
+  "scripts": {
+    "test": "bun test status/peak.test.ts",
+    "build": "bunx openchamber-guest-bundle status/main.ts status/main.js"
+  },
+  "openchamber": {
+    "apiVersion": 1,
+    "engines": {
+      "openchamber": ">=2.0.1"
+    },
+    "contributes": {
+      "panel": {
+        "id": "deepseek-clock",
+        "name": "DeepSeek Clock",
+        "icon": "timer-line"
+      },
+      "statusSection": {
+        "entry": "status/index.html",
+        "title": "DeepSeek peak hours",
+        "height": 148
+      }
+    }
+  },
+  "dependencies": {
+    "@openchamber/sdk": "^2.0.1"
+  }
+}

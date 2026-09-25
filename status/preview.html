@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DeepSeek Clock — local preview</title>
+    <style>
+      /* Stand-in for the host theme tokens (dark), so the panel can be eyeballed
+         outside OpenChamber. The real host supplies --oc-* via applyHostReady. */
+      :root {
+        --surface-background: #1b1b1b;
+        --surface-elevated: #242424;
+        --surface-foreground: #e8e8e8;
+        --surface-muted-foreground: #9b9b9b;
+        --surface-muted: #2a2a2a;
+        --surface-subtle: #232323;
+        --interactive-border: #3a3a3a;
+        --status-success: #10b981;
+        --status-error: #ef4444;
+        --success-text: #34d399;
+        --error-text: #f87171;
+        --font-sans: ui-sans-serif, system-ui, sans-serif;
+      }
+      body { margin: 0; padding: 14px; background: var(--surface-background); font-family: var(--font-sans); color: var(--surface-foreground); }
+      .frame { max-width: 360px; border: 1px solid var(--interactive-border); border-radius: 10px; padding: 10px; background: var(--surface-elevated); }
+      .caption { margin: 0 0 8px; font-size: 12px; color: var(--surface-muted-foreground); }
+    </style>
+  </head>
+  <body>
+    <div class="frame">
+      <p class="caption">What the Work Status section will look like (mock host theme)</p>
+      <div id="root"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
